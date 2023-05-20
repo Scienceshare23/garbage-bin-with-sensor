@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="QaSfB`o[0r0/TxZ,ULDG" x="0" y="0"><statement name="HANDLER"><block type="startHB" id="tI7yHKc;*H;5#D1.3S.:"></block></statement></block><block type="device_forever" id="fQ{-wqPY/BSk5b+h3LzG" x="6" y="141"><statement name="HANDLER"><block type="controls_if" id=",ta#_bL%cAFQ]^{y$U@)"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" disabled="true"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="14:TM%;L`7}~J3_I2Vg="><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="getSensors" id="e%.m_~Nwa@~a_m{A.Y3S"><field name="sensorType">SensorType.Distance</field><field name="port_num">ThreePort.One</field></block></value><value name="B"><shadow type="math_number" id=".N2u6C.#$U[07#p(gqxg"><field name="NUM">20</field></shadow></value></block></value><statement name="DO0"><block type="setPositionServo" id=".0TF%nE,)?4l0bft77Sc"><field name="port_num">FourPort.One</field><value name="angle"><shadow type="math_number_minmax" id="-|.hcnqfD05,%fI5Y2Hr"><mutation min="0" max="180" label="Angle" precision="0"></mutation><field name="SLIDER">90</field></shadow></value><next><block type="setPositionServo" id="1QisIK..^^pdI-XoaDJ~"><field name="port_num">FourPort.Two</field><value name="angle"><shadow type="math_number_minmax" id="3Plvb:MouL,.4j]Sdp]G"><mutation min="0" max="180" label="Angle" precision="0"></mutation><field name="SLIDER">90</field></shadow></value><next><block type="device_show_leds" id="yP^TYD?A(4?m(x+@D7PQ"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        # # # # #
+        `</field></block></next></block></next></block></statement><statement name="ELSE"><block type="setPositionServo" id="6%%5w?#EN2$/c3H3*pQv"><field name="port_num">FourPort.One</field><value name="angle"><shadow type="math_number_minmax" id="[[YoQ69Eb@FW5/6+G=L_"><mutation min="0" max="180" label="Angle" precision="0"></mutation><field name="SLIDER">0</field></shadow></value><next><block type="setPositionServo" id="EQ2KO]Hake8|oET?.U3A"><field name="port_num">FourPort.Two</field><value name="angle"><shadow type="math_number_minmax" id="iexmSy3loD9lSpJW,6+i"><mutation min="0" max="180" label="Angle" precision="0"></mutation><field name="SLIDER">6</field></shadow></value><next><block type="device_show_leds" id="dln0Oek7oi|~fzd0o*~j"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        . # # # . 
+        . # # # . 
+        . . . . .
+        `</field></block></next></block></next></block></statement></block></statement></block></xml>
